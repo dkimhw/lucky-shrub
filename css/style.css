@@ -12,6 +12,8 @@ body {
   box-sizing: border-box;
 }
 
+/* Navigation */
+
 #logo-img {
   width: 2rem;
 }
@@ -39,6 +41,8 @@ body {
   text-decoration: none;
   color: var(--primary-color);
 }
+
+/* Promotions */
 
 .promotions {
   display: grid;
@@ -96,4 +100,50 @@ body {
 
 .card-img img {
   width: 100%;
+}
+
+/* Value Section */
+
+.value-icon-container {
+  max-width: 3rem;
+  margin: 0 auto;
+}
+
+.value-icon {
+  width: 100%;
+  filter: invert(48%) sepia(76%) saturate(290%) hue-rotate(133deg) brightness(88%) contrast(88%);
+}
+
+.value-content {
+  text-align: center;
+}
+
+/* Section CSS */
+
+.section-title {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.divider {
+  border-top: 1px solid #9DB2BF
+}
+
+
+/* Containers */
+
+.container {
+  max-width: 80vw;
+  margin: 2rem auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
