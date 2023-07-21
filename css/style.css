@@ -116,15 +116,44 @@ body {
 
 .hero {
   justify-content: center;
-  background-image: url('../imgs/hero-1.jpg');
+  background-image: url('../imgs/hero-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position-y: bottom; */
   height: 400px;
 }
 
-.hero-text-content {
+.hero-text-container {
   position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hero-text-title {
+  color: #FFF8F0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.hero-text-content {
+  color: #fff;
+}
+
+.hero-btn {
+  border: var(--primary-color) solid 1px;
+  color: #fff;
+  transition: all .25s linear;
+}
+
+.hero-btn:hover {
+  transform: scale(1.15);
+  color: #C2D8B9;
 }
 
 /* Section CSS */
@@ -169,4 +198,14 @@ body {
 
 
 
-/* Media Queries */
+/* Button */
+.btn {
+  border: var(--primary-color-light) solid 1px;
+  padding: .75rem 1.25rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
