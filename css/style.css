@@ -156,6 +156,34 @@ body {
   color: #C2D8B9;
 }
 
+/* Footer CSS */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  margin-top: 3rem;
+  padding: 1.5rem 1.5rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+}
+
 /* Section CSS */
 
 .section-title {
@@ -192,6 +220,8 @@ body {
   display: grid;
   grid-template-rows: 30% 70%;
 }
+
+
 
 
 /* Media Queries */
