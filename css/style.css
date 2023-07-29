@@ -121,6 +121,7 @@ body {
   background-repeat: no-repeat;
   /* background-position-y: bottom; */
   height: 400px;
+  position: relative;
 }
 
 .hero-text-container {
@@ -132,6 +133,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
+  text-align: center;
 }
 
 .hero-text-title {
@@ -203,8 +205,9 @@ body {
   margin: 2rem auto;
 }
 
-.category-flex-container {
-  display: flex;
+.category-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
   margin-top: 1.5rem;
@@ -221,13 +224,6 @@ body {
   grid-template-rows: 30% 70%;
 }
 
-
-
-
-/* Media Queries */
-
-
-
 /* Button */
 .btn {
   border: var(--primary-color-light) solid 1px;
@@ -238,4 +234,95 @@ body {
 a {
   text-decoration: none;
   color: #000;
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1024px) {
+  .category-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c c";
+  }
+
+  .tile-1 {
+    grid-area: a;
+  }
+
+  .tile-2 {
+    grid-area: b;
+  }
+
+  .tile-3 {
+    grid-area: c;
+  }
+
+  .promotions {
+    margin: .75rem;
+  }
+
+  .tile-3 .card-sm {
+    max-width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .value-grid-container {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer-links {
+    display: none;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .category-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+  }
+
+  .tile-1 .card-sm {
+    max-width: 100%;
+  }
+
+  .tile-2 .card-sm {
+    max-width: 100%;
+  }
+
+  .hero-text-content {
+    display: none;
+  }
+
+  .hero-text-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    width: 300px;
+  }
+
 }
