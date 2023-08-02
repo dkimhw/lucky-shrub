@@ -2,8 +2,12 @@
 
 <!--
 
-1. Responsive
-2. Hamburger menu
+1. make it so you cannot scroll down when sidebar is up
+2. Scroll sticky & animation
+3. Add social links to sidebar & footer
+4. reduce height of 3rd category card
+5. add transition properties
+
 
 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
@@ -24,25 +28,69 @@
   </head>
   <body>
     <main>
-      <header class="navbar">
+      <nav class="navbar">
         <!-- for logo -->
         <div id="logo" class="nav-logo-container">
           <img id="logo-img" src="./imgs/Asset 2@3x.png" alt="Lucky Shrub Logo"/>
           <button class="nav-btn">
-            <img src="./imgs/bars-solid.svg">
+            <img src="./imgs/bars-solid.svg" class="nav-btn-icon">
           </button>
         </div>
-        <nav class="nav hidden">
+        <nav class="nav">
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Flowers</a></li>
-            <li><a href="#">Plants</a></li>
+            <li><a href="#">Shop</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
-      </header>
-      <!-- for body carousel -->
+      </nav>
+
+      <aside class="sidebar" id="sidebar">
+        <div>
+          <button class="close-btn" id="close-btn">
+            <img class="close-icon" src="./imgs/xmark-solid.svg">
+          </button>
+          <ul class="sidebar-links">
+            <li>
+              <a href="#" class="sidebar-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link">Shop</a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="social-icons">
+            <li>
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-icon">
+                <i class="fab fa-squarespace"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- for hero-->
       <section class="hero">
         <div class="hero-text-container">
           <h1 class="hero-text-title">Fresh for Summer</h1>
@@ -168,6 +216,5 @@
       </div>
     </footer>
   </body>
-
-
+  <script src="script.js"></script>
 </html>
