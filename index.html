@@ -2,18 +2,10 @@
 
 <!--
 
-1. make it so you cannot scroll down when sidebar is up
-2. Scroll sticky & animation
-3. Add social links to sidebar & footer
-4. reduce height of 3rd category card
-5. add transition properties
+
+1. Scroll sticky feature
 
 
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV
 -->
 
 <html>
@@ -36,14 +28,12 @@
             <img src="./imgs/bars-solid.svg" class="nav-btn-icon">
           </button>
         </div>
-        <nav class="nav">
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </nav>
 
       <aside class="sidebar" id="sidebar">
@@ -68,22 +58,12 @@
           <ul class="social-icons">
             <li>
               <a href="#" class="social-icon">
-                <i class="fab fa-facebook"></i>
+                <img src="./imgs/facebook-f.svg" alt="facebook logo"/>
               </a>
             </li>
             <li>
               <a href="#" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-icon">
-                <i class="fab fa-squarespace"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-icon">
-                <i class="fab fa-instagram"></i>
+                <img src="./imgs/instagram.svg" alt="instagram logo"/>
               </a>
             </li>
           </ul>
@@ -201,19 +181,34 @@
       </section>
 
     </main>
-    <footer class="footer">
-      <div class="copyright">
-        &copy 2002 - 2023 by Lucky Shrub
+    <footer>
+      <div class="footer-info">
+        <div class="copyright">
+          &copy 2002 - 2023 by Lucky Shrub
+        </div>
+        <div>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flowers</a></li>
+            <li><a href="#">Plants</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul class="footer-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Flowers</a></li>
-          <li><a href="#">Plants</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
+
+      <ul class="social-icons">
+        <li>
+          <a href="#" class="social-icon">
+            <img src="./imgs/facebook-f.svg" alt="facebook logo"/>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-icon">
+            <img src="./imgs/instagram.svg" alt="instagram logo"/>
+          </a>
+        </li>
+    </ul>
     </footer>
   </body>
   <script src="script.js"></script>
