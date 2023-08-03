@@ -170,8 +170,12 @@ body.modal-open {
 .social-icon {
   font-size: 1.5rem;
   width: 3rem;
-  color: var(--clr-grey-1);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(158deg) brightness(104%) contrast(102%);
   transition: var(--transition);
+}
+
+.sidebar .social-icon {
+  filter: invert(41%) sepia(64%) saturate(317%) hue-rotate(128deg) brightness(92%) contrast(92%);
 }
 
 .social-icon img {
@@ -179,7 +183,7 @@ body.modal-open {
 }
 
 .social-icon:hover {
-  color: var(--clr-primary-5);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(158deg) brightness(104%) contrast(102%);
 }
 
 
@@ -308,7 +312,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .copyright {
@@ -329,8 +333,9 @@ footer {
 }
 
 footer .social-icons {
-  margin: 0 auto;
+  justify-content: flex-start;
   padding: 0 0 1rem 0;
+  margin: 0;
 }
 
 /* Section CSS */
@@ -483,10 +488,10 @@ a {
     display: inline-block;
   }
 
-  /* .close-btn {
-    display: inline-block;
-
-  } */
+  footer .social-icons {
+    margin: 2rem auto 0 auto;
+    justify-content: center;
+  }
 
   .close-btn:hover {
     transform: scale(1.2);
